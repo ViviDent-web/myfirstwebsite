@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V's web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <button class="nav-btn active" data-page="home">Home</button>
+        <button class="nav-btn" data-page="chisiamo">Chi siamo</button>
+        <button class="nav-btn" data-page="contatti">Contatti</button>
+    </nav>
+
+    <main id="content-area">
+        <section class="hero">
+            <button class="change-title">Cambia Titolo</button>
+            <h1>L'entrata di bmw nel mondo del Motorsport</h1>
+            <button class="change-title-h2">Cambia Titolo h2 </button>
+            <h2 class="target-title">La svolta ufficiale: Nasce la BMW Motorsport (1972) </h2>
+            <p>La data fondamentale che sancisce l'ingresso in modo strutturato, massiccio e ufficiale di BMW nel
+                motorsport moderno è il 1° maggio 1972.
+
+                In quel giorno venne fondata la BMW Motorsport GmbH (guidata dall'ex pilota Jochen Neerpasch), una
+                divisione interna nata con l'unico scopo di gestire tutte le attività sportive del marchio.</p>
+            <div class="mediacont">
+                <img src=" https://cimg1.ibsrv.net/ibimg/hgm/1920x1080-1/100/954/2025-bmw-m4-gt3-evo-at-the-2025-24-hours-of-dubai_100954377.jpg" " width="
+                    700px">
+            </div>
+        </section>
+        <p> I frutti di questa scelta arrivarono subito:</p>
+        <ul>
+            <li> 1973: Debutta la leggendaria BMW 3.0 CSL (soprannominata "Batmobile" per le sue vistose appendici
+                aerodinamiche), che dominerà il Campionato Europeo Turismo per anni. </li>
+            <div class="mediacont">
+                <img src="https://cdn.veloce.it/wp-content/uploads/webp/2023/02/bmw-3.0-csl-1973-2-1024x0.webp "
+                    width="700px">
+            </div>
+        </ul>
+        <ul>
+            <li>1978: Nasce la BMW M1, la prima vera supercar del reparto, che darà vita al famoso campionato monomarca
+                Procar in cui correvano anche i piloti di Formula 1</li>
+        </ul>
+        <div class="mediacont">
+            <img src="https://prestigeandperformancecar.com/wp-content/uploads/M1-Procar-Revival-Norisring-Dreinhard_SUN-47-900x563.jpg.webp"
+                width="700px">
+        </div>
+
+        <div class="panel">
+            <button class="panel-header">Clicca qui per scoprire di più</button>
+            <div class="panel-content">
+                <p>Ecco alcune delle curiosità più affascinanti sulla storia della BMW, un marchio che è partito dal
+                    cielo prima di dominare l'asfalto e le piste del Motorsport </p>
+                <ol start="1">
+                    <l1> Nel 1983, la BMW vinse il mondiale di Formula 1 con la scuderia Brabham guidata da Nelson
+                        Piquet. Il motore di quella vettura (il leggendario M12/13) era un minuscolo 1.5 litri a 4
+                        cilindri, ma in configurazione da qualifica riusciva a sprigionare oltre 1400 cavalli! Gli
+                        ingegneri dell'epoca ammisero che la potenza era così mostruosa che i banchi di prova non
+                        riuscivano nemmeno a misurarla con precisione. È tuttora considerato il motore più potente mai
+                        apparso nella storia della F1 </l1>
+                </ol>
+            </div>
+
+            <button class="btn-heal">Usa Pozione</button>
+            <button class="btn-super-heal">Usa Super Pozione</button>
+
+            <div class="counter-container">
+                <h2>Conta e Spendi</h2>
+
+                <button id="btn-diminuisci">-</button>
+
+                <span id="valore-contatore">0</span>
+
+                <button id="btn-aumenta">+</button>
+
+            </div>
+    </main>
+
+    <script src="script.js" defer></script>
+</body>
+<footer>
+    <div class="footer-container">
+        <p>&copy; Copyright © BMW AG 2026. Tutti i diritti riservati.</p>
+        <div class="footer-links">
+            <a href="#" class="footer-nav" data-target="home">Home</a>
+            <a href="#" class="footer-nav" data-target="chi-siamo">Chi Siamo</a>
+            <a href="#" class="footer-nav" data-target="contatti">Contatti</a>
+            <a href="#privacy" class="legal-link">Privacy Policy</a>
+            <a href="#cookies" class="legal-link">Cookie Policy</a>
+        </div>
+    </div>
+</footer>
+
+</html>

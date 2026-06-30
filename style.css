@@ -1,0 +1,233 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    
+    display: flex;
+    flex-direction: column;
+    color: crimson;
+    background-color:white;
+}
+
+main {
+    flex: 1; 
+    padding: 0 1.5rem;
+    margin: 0 2rem;
+}
+
+h1 {
+    font-size: xx-large;
+    text-align: center;
+    font-family: Impact;
+}
+
+.mediacont, .panel-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    opacity: 30%;
+    transition: ease-in-out 0.3s;
+}
+
+.mediacont:hover, .panel-media:hover {
+    opacity: 100%;
+    translate: 0px -5px;
+    transition: ease-in-out 0.3s;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+    gap: 15px;    
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: solid;
+}
+
+.navbar a:hover {
+    font-style: italic;
+    color: black
+}
+
+.nav-btn {
+    background-color: #dc143c;
+    padding: 10px 20px;
+    border-radius: 32px;
+}
+
+.navbar a:hover {
+    color: #dc143c;
+    background-color: #fdfdfd;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.panel-container {
+    /* Sfondo sfumato: parte da un grigio chiarissimo e sfuma verso un rosa/cremisi molto leggero */
+    background: linear-gradient(75deg, rgb(250, 250, 250) 70%, #fff0f2 100%);
+    padding: 1rem;
+    border: solid 1px #dc143c;
+    border-radius: 32px;
+}
+
+.panel-container h3 {
+    color: #000000;                 /* Titolo nero per fare contrasto con il gradiente */
+    font-family: Arial, sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #dc143c; /* Linea cremisi spessa sotto il titolo */
+    display: inline-block;          /* Fa in modo che la linea si adatti alla lunghezza del testo */
+}
+
+/* Stile base per i link dentro il pannello */
+.panel-container a {
+    color: #dc143c;                
+    text-decoration: none;         
+    font-weight: bold;             
+    display: inline-block;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Effetto quando passi il mouse sopra il link (Hover) */
+.panel-container a:hover {
+    color: black;                   /* Il link diventa nero per stacco visivo */
+    letter-spacing: 0.5px;          /* Si allarga leggermente in modo dinamico */
+}
+
+.grid-container {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row-grid-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.card-container {
+    /* Sfondo sfumato: parte da un grigio chiarissimo e sfuma verso un rosa/cremisi molto leggero */
+    min-width: 128px;
+    max-width: 256px;
+    background: linear-gradient(75deg, rgb(250, 250, 250) 70%, #fff0f2 100%);
+    padding: 1rem;
+    border: solid 1px #dc143c;
+    border-radius: 32px;
+    opacity: 30%;
+    transition: ease-in-out 0.3s;
+}
+
+.card-container:hover {
+    opacity: 100%;
+    translate: 0px -5px;
+    transition: ease-in-out 0.3s;
+}
+
+.panel-content {
+    display: none; /* Nasconde il contenuto all'inizio */
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+/* Quando il pannello ha anche la classe 'is-open', mostra il contenuto */
+.panel.is-open .panel-content {
+    display: block;
+}
+
+footer {
+    background-color: #dc143c; 
+    color: white;              
+    padding: 20px 0;
+    margin-top: 40px;          
+}
+
+.footer-container {       
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    flex-wrap: wrap;           
+}
+
+.footer-container p {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 32px;       
+    transition: ease-in-out 0.3s; 
+}
+
+.footer-links a:hover {
+    color: #dc143c;            
+    background-color: white;   
+    font-style: italic;        
+}
+
+@media (max-width: 600px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}
+
+.page {
+   display: none;
+}
+
+.page.active {
+    display: block; 
+}
+
+.navbar {
+    display: flex;
+    background-color: white;
+    justify-content: right;
+    padding: 10px;
+    gap: 15px;
+}
+
+.nav-btn {
+    background: none;
+    border: none;
+    color: green;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.2s ease;
+}
+
+
+.nav-btn.active, .nav-btn:hover {
+    background-color:  crimson;
+    font-weight: bold;
+}
